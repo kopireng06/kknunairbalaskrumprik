@@ -1,16 +1,28 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+.shadow-custom{
+    box-shadow: rgb(0, 0, 0) 0px 1px 3px -1px;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
+.container-yt{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
 }
-
-* {
-  box-sizing: border-box;
+.video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.p-60p{
+    padding-top: 50%;
+}
+.bg-footer{
+    background: linear-gradient(180deg,rgb(56, 3, 3) 0%, rgb(102, 19, 19) 35% ,rgb(247, 43, 43) 100%)
+}
+.filter-white{
+    filter: invert(1);
+}
+.filter-red-600{
+    filter: invert(22%) sepia(38%) saturate(4341%) hue-rotate(342deg) brightness(104%) contrast(104%);
 }
