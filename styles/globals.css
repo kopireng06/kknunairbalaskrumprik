@@ -15,7 +15,7 @@
     height: 100%;
 }
 .p-60p{
-    padding-top: 50%;
+    padding-top: 70%;
 }
 .bg-footer{
     background: linear-gradient(180deg,rgb(56, 3, 3) 0%, rgb(102, 19, 19) 35% ,rgb(247, 43, 43) 100%)
@@ -25,4 +25,9 @@
 }
 .filter-red-600{
     filter: invert(22%) sepia(38%) saturate(4341%) hue-rotate(342deg) brightness(104%) contrast(104%);
+}
+@media screen and (min-width: 1024px) {
+    .p-60p{
+        padding-top: 50%;
+    }
 }

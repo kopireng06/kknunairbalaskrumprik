@@ -4,8 +4,8 @@ import Jumbotron from "../../components/Jumbotron";
 import Iseng from "../../public/IMG_20210530_070910.jpg";
 
 const ComingSoon = () => {
-    const {pathname} = useRouter()
-
+    const pathname = useRouter().pathname.match("\/([A-Za-z0-9]*)\/")[0];
+    console.log(pathname)
     return (  
         <>
             <Jumbotron pathName={pathname}/>
@@ -62,7 +62,7 @@ const ComingSoon = () => {
                     </p>
                 </section>
                 <section className="w-full">
-                    <h2 className="font-bold text-2xl my-3">2. DETTOL</h2>
+                    <h2 className="font-bold text-lg lg:text-2xl my-3">2. DETTOL</h2>
                     <div className="w-full rounded shadow-custom overflow-hidden p-60p bg-red-100 relative">
                         <Image src={Iseng} alt="h" layout="fill" objectFit="cover"/>
                     </div>

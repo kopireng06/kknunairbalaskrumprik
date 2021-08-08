@@ -23,10 +23,10 @@ const Navbar = () => {
 
     return (  
         <header className={`${isTransparent ? '' : 'bg-white shadow-custom'} transition-all duration-700 w-full fixed z-10 left-0 top-0`}>
-            <div className="w-full h-20 px-5 lg:px-10 flex justify-between items-center">
+            <div className="w-full h-20 px-0 lg:px-5 lg:px-10 flex justify-between items-center">
                 <div className="px-2 flex items-center">
                     <Image src={LogoKKN} alt="Logo Laskar 2021" height={40} width={40} />
-                    <h1 className={`text-xs lg:text-lg mx-2 lg:mx-5 font-bold ${isTransparent ? 'text-white' : 'text-red-600'} `}>KKN 241 BALASKRUMPRIK</h1>                
+                    <h1 className={`text-xs lg:text-lg mx-2 lg:mx-5 font-bold ${isTransparent ? 'text-white' : 'text-red-600'} `}>KKN 241 BALAS KRUMPRIK</h1>                
                 </div>
                 <div className="px-2 flex items-center">
                     <Link href="/anggota-kami">

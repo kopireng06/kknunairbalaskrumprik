@@ -1,7 +1,16 @@
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 import Jumbotron from "../components/Jumbotron";
-import Iseng from "../public/IMG_20210530_070910.jpg";
+import Naufal from "../public/naufal.jpg";
+import Imin from "../public/imin.jpg";
+import Felix from "../public/felix.jpg";
+import Liza from "../public/liza.jpg";
+import Feni from "../public/feni.jpg";
+import Zidan from "../public/zidan.jpg";
+import Rejak from "../public/rejak.jpg";
+import Dandy from "../public/dandy.jpg";
+import Vidi from "../public/vidi.jpg";
+import Roziq from "../public/roziq.jpg";
 
 const AnggotaKami = () => {
     const {pathname} = useRouter()
@@ -20,16 +29,72 @@ const AnggotaKami = () => {
                     urna.
                 </p>
                 <section className="w-full">
-                    <h2 className="font-bold text-lg lg:text-2xl my-3">1. Muhammad Roziq Syarwan</h2>
+                    <h2 className="font-bold text-lg lg:text-2xl my-3">1. Naufal Ghani Achmani</h2>
                     <div className="w-full rounded shadow-custom overflow-hidden p-60p bg-red-100 relative">
-                        <Image src={Iseng} alt="h" layout="fill" objectFit="cover"/>
-                        <h2 className="absolute left-4 text-xs lg:text-xl rounded text-white bg-red-600 bottom-4 p-2 text-white font-bold">FST | SIE HUMAS</h2>
+                        <Image src={Naufal} alt="h" layout="fill" objectFit="cover"/>
+                        <h2 className="absolute left-4 text-xs lg:text-xl rounded text-white bg-red-600 bottom-4 p-2 text-white font-bold">FST | KETUA</h2>
                     </div>
                 </section>
                 <section className="w-full">
-                    <h2 className="font-bold text-lg lg:text-2xl my-3">2. Muhammad Roziq Syarwan</h2>
+                    <h2 className="font-bold text-lg lg:text-2xl my-3">2. Alfia Imamah Muhaimin</h2>
                     <div className="w-full rounded shadow-custom overflow-hidden p-60p bg-red-100 relative">
-                        <Image src={Iseng} alt="h" layout="fill" objectFit="cover"/>
+                        <Image src={Imin} alt="h" layout="fill" objectFit="cover"/>
+                        <h2 className="absolute left-4 text-xs lg:text-xl rounded text-white bg-red-600 bottom-4 p-2 text-white font-bold">FST | SEKRETARIS 1</h2>
+                    </div>
+                </section>
+                <section className="w-full">
+                    <h2 className="font-bold text-lg lg:text-2xl my-3">3. Felix Fisabilillah Bayu</h2>
+                    <div className="w-full rounded shadow-custom overflow-hidden p-60p bg-red-100 relative">
+                        <Image src={Felix} alt="h" layout="fill" objectFit="cover"/>
+                        <h2 className="absolute left-4 text-xs lg:text-xl rounded text-white bg-red-600 bottom-4 p-2 text-white font-bold">FEB | SEKRETARIS 2</h2>
+                    </div>
+                </section>
+                <section className="w-full">
+                    <h2 className="font-bold text-lg lg:text-2xl my-3">4. Putri Nur Halizah</h2>
+                    <div className="w-full rounded shadow-custom overflow-hidden p-60p bg-red-100 relative">
+                        <Image src={Liza} alt="h" layout="fill" objectFit="cover"/>
+                        <h2 className="absolute left-4 text-xs lg:text-xl rounded text-white bg-red-600 bottom-4 p-2 text-white font-bold">FEB | BENDAHARA 1</h2>
+                    </div>
+                </section>
+                <section className="w-full">
+                    <h2 className="font-bold text-lg lg:text-2xl my-3">5. Feni Kurniasari</h2>
+                    <div className="w-full rounded shadow-custom overflow-hidden p-60p bg-red-100 relative">
+                        <Image src={Feni} alt="h" layout="fill" objectFit="cover"/>
+                        <h2 className="absolute left-4 text-xs lg:text-xl rounded text-white bg-red-600 bottom-4 p-2 text-white font-bold">FST | BENDAHARA 2</h2>
+                    </div>
+                </section>
+                <section className="w-full">
+                    <h2 className="font-bold text-lg lg:text-2xl my-3">6. Zidan Nur Karim</h2>
+                    <div className="w-full rounded shadow-custom overflow-hidden p-60p bg-red-100 relative">
+                        <Image src={Zidan} alt="h" layout="fill" objectFit="cover"/>
+                        <h2 className="absolute left-4 text-xs lg:text-xl rounded text-white bg-red-600 bottom-4 p-2 text-white font-bold">FST | SIE ACARA</h2>
+                    </div>
+                </section>
+                <section className="w-full">
+                    <h2 className="font-bold text-lg lg:text-2xl my-3">7. Muhammad Reza Zulfikarsyah</h2>
+                    <div className="w-full rounded shadow-custom overflow-hidden p-60p bg-red-100 relative">
+                        <Image src={Rejak} alt="h" layout="fill" objectFit="cover"/>
+                        <h2 className="absolute left-4 text-xs lg:text-xl rounded text-white bg-red-600 bottom-4 p-2 text-white font-bold">FST | SIE ACARA</h2>
+                    </div>
+                </section>
+                <section className="w-full">
+                    <h2 className="font-bold text-lg lg:text-2xl my-3">8. Dandy Dwiki Pramudya</h2>
+                    <div className="w-full rounded shadow-custom overflow-hidden p-60p bg-red-100 relative">
+                        <Image src={Dandy} alt="h" layout="fill" objectFit="cover"/>
+                        <h2 className="absolute left-4 text-xs lg:text-xl rounded text-white bg-red-600 bottom-4 p-2 text-white font-bold">FEB | SIE PERLENGKAPAN</h2>
+                    </div>
+                </section>
+                <section className="w-full">
+                    <h2 className="font-bold text-lg lg:text-2xl my-3">9. Vidi Auria Susanti</h2>
+                    <div className="w-full rounded shadow-custom overflow-hidden p-60p bg-red-100 relative">
+                        <Image src={Vidi} alt="h" layout="fill" objectFit="cover"/>
+                        <h2 className="absolute left-4 text-xs lg:text-xl rounded text-white bg-red-600 bottom-4 p-2 text-white font-bold">FISIP | SIE PUBLIKASI, DOKUMENTASI, DEKORASI</h2>
+                    </div>
+                </section>
+                <section className="w-full">
+                    <h2 className="font-bold text-lg lg:text-2xl my-3">10. Muhammad Roziq Syarwan Evendi</h2>
+                    <div className="w-full rounded shadow-custom overflow-hidden p-60p bg-red-100 relative">
+                        <Image src={Roziq} alt="h" layout="fill" objectFit="cover"/>
                         <h2 className="absolute left-4 text-xs lg:text-xl rounded text-white bg-red-600 bottom-4 p-2 text-white font-bold">FST | SIE HUMAS</h2>
                     </div>
                 </section>
