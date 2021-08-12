@@ -1,16 +1,16 @@
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 import Jumbotron from "../components/Jumbotron";
-import Naufal from "../public/naufal.jpg";
-import Imin from "../public/imin.jpg";
-import Felix from "../public/felix.jpg";
-import Liza from "../public/liza.jpg";
-import Feni from "../public/feni.jpg";
-import Zidan from "../public/zidan.jpg";
-import Rejak from "../public/rejak.jpg";
-import Dandy from "../public/dandy.jpg";
-import Vidi from "../public/vidi.jpg";
-import Roziq from "../public/roziq.jpg";
+import Naufal from "../public/naufal.JPG";
+import Imin from "../public/imin.JPG";
+import Felix from "../public/felix.JPG";
+import Liza from "../public/liza.JPG";
+import Feni from "../public/feni.JPG";
+import Zidan from "../public/zidan.JPG";
+import Rejak from "../public/rejak.JPG";
+import Dandy from "../public/dandy.JPG";
+import Vidi from "../public/vidi.JPG";
+import Roziq from "../public/roziq.JPG";
 
 const AnggotaKami = () => {
     const {pathname} = useRouter()
@@ -19,14 +19,9 @@ const AnggotaKami = () => {
         <>
             <Jumbotron pathName={pathname}/>
             <div className="w-11/12 md:9/12 lg:w-8/12 mx-auto py-5">
-                <p className="text-sm my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Etiam neque nisl, consequat accumsan tortor at, hendrerit luctus lorem. Cras sed tortor 
-                    risus. Suspendisse laoreet nulla in mi porta egestas. Morbi ut varius ex. Fusce massa 
-                    risus, interdum non sapien eu, vehicula pharetra lacus. Proin eget velit sit amet nibh
-                    laoreet placerat a ut velit. Sed volutpat diam metus, ut imperdiet dolor placerat nec.
-                    In placerat sed turpis a fermentum. In in augue cursus, suscipit arcu et, consectetur
-                    metus. Proin fringilla dolor non neque pulvinar tincidunt in id nisl. Etiam at justo 
-                    urna.
+                <p className="text-sm my-3">Halo warga Balaskrumprik, sudah gak asing lagi kan sama pepatah
+                &apos;&apos;Tak Kenal Maka Tak Sayang&apos;&apos;, nah biar makin sayang, hehe yuk kenalan sama kita mahasiswa KKN Universitas Airlangga
+                periode 64 kelompok 241 yang pastinya kece kece nih
                 </p>
                 <section className="w-full">
                     <h2 className="font-bold text-lg lg:text-2xl my-3">1. Naufal Ghani Achmani</h2>

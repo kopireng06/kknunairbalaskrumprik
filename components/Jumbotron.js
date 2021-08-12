@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Iseng from "../public/bg-kkn-2.jpg";
-import Iseng2 from "../public/bg-kkn-3.jpg";
+import Iseng2 from "../public/bg-kkn-3.JPG";
 import LogoIG from "../public/ig.png";
 import LogoYT from "../public/yt.png";
 

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Iseng from "../public/IMG_20210530_070910.jpg";
+import Foto from "../public/balaskrumprik2.jpg";
 
 const Balaskrumprik = () => {
     return (  
@@ -7,7 +8,7 @@ const Balaskrumprik = () => {
                         <h1 className="text-center font-bold mb-10 text-3xl md:text-4xl">TENTANG <span className="text-red-600"> BALAS KRUMPRIK</span></h1>
             <article className="w-full flex items-center flex-col md:flex-row">
                 <figure className="w-full md:w-5/12 h-80 rounded-xl relative shadow-custom transition-all">
-                    <Image src={Iseng} alt="h" layout="fill" objectFit="cover" className="rounded-xl"/>
+                    <Image src={Foto} alt="h" layout="fill" objectFit="cover" className="rounded-xl"/>
                 </figure>                
                 <div  className="flex-1 px-2 mt-5 lg:px-10 text-sm">
                     <p className="my-2">

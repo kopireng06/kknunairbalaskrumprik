@@ -3,10 +3,10 @@ import Image from 'next/image'
 import Jumbotron from "../../components/Jumbotron";
 import Hashtags from "../../components/Hashtags";
 import Edukasi5M from "../../public/edukasi-5m.jpg";
-import MencuciTangan from "../../public/mencuci-tangan.jpg";
-import MemakaiMasker from "../../public/memakai-masker.jpg";
-import MenjagaJarak from "../../public/menjaga-jarak.jpg";
-import MenjauhiKerumuman from "../../public/menjauhi-kerumunan.jpg";
+import MencuciTangan from "../../public/mencuci-tangan.PNG";
+import MemakaiMasker from "../../public/memakai-masker.PNG";
+import MenjagaJarak from "../../public/menjaga-jarak.PNG";
+import MenjauhiKerumuman from "../../public/menjauhi-kerumunan.PNG";
 import MengurangiMobilitas from "../../public/mengurangi-mobilitas.jpg";
 
 const Artikel = () => {
@@ -14,7 +14,7 @@ const Artikel = () => {
     console.log(pathname);
     return (  
         <>
-            <Jumbotron pathName={pathname} gambar={Edukasi5M} 
+            <Jumbotron pathName={pathname} gambar={MemakaiMasker} 
             judul="Mengenal Protokol Kesehatan 5M Untuk Cegah COVID-19" 
             tanggal="Kamis, 29 Juli 2021"/>
             <div className="w-11/12 md:9/12 lg:w-8/12 mx-auto py-5">

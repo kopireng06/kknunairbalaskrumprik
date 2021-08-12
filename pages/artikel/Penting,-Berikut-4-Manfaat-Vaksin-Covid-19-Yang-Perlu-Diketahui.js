@@ -3,13 +3,14 @@ import Image from 'next/image'
 import Jumbotron from "../../components/Jumbotron";
 import Hashtags from "../../components/Hashtags";
 import VaksinJokowi from "../../public/vaksin-jokowi.jpg";
+import PenyuluhanVaksin from "../../public/penyuluhan-vaksin.jpg";
 
 const Artikel = () => {
     const pathname = useRouter().pathname.match("\/([A-Za-z0-9]*)\/")[0];
     console.log(pathname);
     return (  
         <>
-            <Jumbotron pathName={pathname} gambar={VaksinJokowi} 
+            <Jumbotron pathName={pathname} gambar={PenyuluhanVaksin} 
             judul="Penting, Berikut 4 Manfaat Vaksin Covid-19 Yang Perlu Diketahui" 
             tanggal="Kamis, 29 Juli 2021"/>
             <div className="w-11/12 md:9/12 lg:w-8/12 mx-auto py-5">

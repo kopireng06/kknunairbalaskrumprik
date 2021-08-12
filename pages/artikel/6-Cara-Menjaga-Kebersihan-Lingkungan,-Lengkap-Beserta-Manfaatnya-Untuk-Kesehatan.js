@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import Image from 'next/image'
 import Jumbotron from "../../components/Jumbotron";
 import Hashtags from "../../components/Hashtags";
-import KebersihanLingkungan from "../../public/kebersihan-lingkungan.jpg";
+import KebersihanLingkungan from "../../public/kebersihan-lingkungan.jpeg";
 
 const Artikel = () => {
     const pathname = useRouter().pathname.match("\/([A-Za-z0-9]*)\/")[0];

@@ -11,7 +11,7 @@ const Footer = () => {
                 </article>
                 <aside className="w-10/12 md:w-6/12 rounded-xl relative">
                     <div className="container-yt">
-                        <iframe src="https://www.youtube.com/embed/2LBBaD1aQuw" frameBorder="0" allowFullScreen className="video"></iframe>
+                        <iframe src="https://www.youtube.com/embed/66ZLi7OvdU8" frameBorder="0" allowFullScreen className="video"></iframe>
                     </div>
                 </aside>
             </div>
