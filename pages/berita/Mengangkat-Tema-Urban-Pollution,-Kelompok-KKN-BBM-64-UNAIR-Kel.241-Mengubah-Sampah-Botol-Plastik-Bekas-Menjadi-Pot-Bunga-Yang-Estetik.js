@@ -12,11 +12,12 @@ const Artikel = () => {
     const initial = {y:-30,opacity:0};
     const transition = {delay:0.7};
     const animate = {y:0,opacity:1};
+    const judul = "Mengangkat Tema Urban Pollution, Kelompok KKN-BBM 64 UNAIR Kel.241 Mengubah Sampah Botol Plastik Bekas Menjadi Pot Bunga Yang Estetik"
 
     return (  
         <motion.div layoutId={judul}>
             <Jumbotron pathName={pathname} gambar={PembuatanPot2} 
-            judul="Mengangkat Tema Urban Pollution, Kelompok KKN-BBM 64 UNAIR Kel.241 Mengubah Sampah Botol Plastik Bekas Menjadi Pot Bunga Yang Estetik" 
+            judul={judul}
             tanggal="Senin, 9 Agustus 2021"/>
             <motion.div initial={initial} transition={transition} animate={animate} className="w-11/12 md:9/12 lg:w-8/12 mx-auto py-5">
                 <p className="text-sm my-3">

@@ -11,11 +11,12 @@ const Artikel = () => {
     const initial = {y:-30,opacity:0};
     const transition = {delay:0.7};
     const animate = {y:0,opacity:1};
+    const judul = "Kerjasama Dengan SMAN 22 SBY Dan AUBMO, Kelompok 241 KKN-BBM 64 UNAIR Adakan Acara Webinar Beasiswa Dengan Tema “Kuliah Gratis Dengan KIP-K”" 
 
     return (  
         <motion.div layoutId={judul}>
             <Jumbotron pathName={pathname} gambar={PenyuluhanBeasiswa} 
-            judul="Kerjasama Dengan SMAN 22 SBY Dan AUBMO, Kelompok 241 KKN-BBM 64 UNAIR Adakan Acara Webinar Beasiswa Dengan Tema “Kuliah Gratis Dengan KIP-K”" 
+            judul={judul}
             tanggal="Kamis, 12 Agustus 2021"/>
             <motion.div initial={initial} transition={transition} animate={animate} className="w-11/12 md:9/12 lg:w-8/12 mx-auto py-5">
                 <p className="text-sm my-3">

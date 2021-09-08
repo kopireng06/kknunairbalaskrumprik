@@ -12,13 +12,12 @@ const Artikel = () => {
     const initial = {y:-30,opacity:0};
     const transition = {delay:0.7};
     const animate = {y:0,opacity:1};
+    const judul = "Dilaksanakan di 3 RW, KKN-BBM 64 UNAIR Kel.241 Adakan Pembagian Hand Sanitizer, Masker Serta Penyuluhan Vaksin"
 
     return (  
         <motion.div layoutId={judul}>
             <Jumbotron pathName={pathname} gambar={NgasihMasker2} 
-            judul="Dilaksanakan di 3 RW, KKN-BBM 64 UNAIR Kel.241 Adakan 
-            Pembagian Hand Sanitizer, Masker Serta Penyuluhan Vaksin" 
-            tanggal="Sabtu, 7 Agustus 2021"/>
+            judul={judul}  tanggal="Sabtu, 7 Agustus 2021"/>
             <motion.div initial={initial} transition={transition} animate={animate} className="w-11/12 md:9/12 lg:w-8/12 mx-auto py-5">
                 <p className="text-sm my-3">
                     Pada hari sabtu tanggal 7 Agustus 2021, kelompok 241 KKN-BBM 64 Universitas Airlangga melaksanakan 

@@ -11,11 +11,11 @@ const Berita1 = () => {
     const initial = {y:-30,opacity:0};
     const transition = {delay:0.7};
     const animate = {y:0,opacity:1};
+    const judul = "Dilakukan Secara Daring, Pembukaan KKN-BBM 64 Kelompok 241 Mengusung Tema KKN Urban Pollution"
 
     return (  
         <motion.div layoutId={judul}>
-            <Jumbotron pathName={pathname} gambar={ScreenShotPembukaan} judul="Dilakukan Secara Daring, Pembukaan KKN-BBM 64 
-            Kelompok 241 Mengusung Tema KKN Urban Pollution" tanggal="Kamis, 29 Juli 2021"/>
+            <Jumbotron pathName={pathname} gambar={ScreenShotPembukaan} judul={judul} tanggal="Kamis, 29 Juli 2021"/>
             <motion.div initial={initial} transition={transition} animate={animate} className="w-11/12 md:9/12 lg:w-8/12 mx-auto py-5">
                 <p className="text-sm my-3">
                     Kamis, 29 Juli 2021 dilaksanakan Pembukaan KKN BBM 64 Kelompok 241 dengan mengusung 
