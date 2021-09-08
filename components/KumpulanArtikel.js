@@ -24,9 +24,19 @@ const KumpulanArtikel = () => {
                  tanggal="Kamis, 25 Juli 2021" deskripsi="Meski sudah lebih dari satu tahun, pandemi virus corona 
                  masih terus menyerang penduduk dunia tanpa henti. Di Indonesia, angka kasus positif virus corona 
                  sudah di atas 1,5 juta jiwa (02/07/2021). " />
-                {/* <CardArtikelPolos/>
-                <CardArtikelPolos/>
-                <CardArtikelPolos/> */}
+            </div>
+            <h1 className="text-center font-bold text-3xl md:text-4xl">TUTORIAL <span className="text-red-600"> KAMI</span></h1>
+            <div className="w-full items-start grid grid-cols-1 md:grid-cols-2 gap-2 lg:gap-4 p-5 md:px-16 md:pt-10">
+                <aside className="w-full rounded-xl relative">
+                    <div className="container-yt">
+                        <iframe src="https://youtube.com/embed/Bhc4IudNEs8" frameBorder="0" allowFullScreen className="video"></iframe>
+                    </div>
+                </aside>
+                <aside className="w-full rounded-xl relative">
+                    <div className="container-yt">
+                        <iframe src="https://www.youtube.com/embed/X6MpBhmC2Pc" frameBorder="0" allowFullScreen className="video"></iframe>
+                    </div>
+                </aside>
             </div>
         </div>    
     </>

@@ -5,6 +5,7 @@ import NgasihMasker2 from "../public/ngasih-masker-2.jpg";
 import PengadaanTempatSampah from "../public/pengadaan-tempat-sampah.jpeg";
 import PembuatanPot2 from "../public/pembuatan-pot-2.jpg";
 import PemberdayaanUMKM from "../public/pemberdayaan-umkm.jpg";
+import PenyuluhanBeasiswa from "../public/penyuluhan-beasiswa.png";
 
 const KumpulanBerita = () => {
     return (
@@ -17,7 +18,7 @@ const KumpulanBerita = () => {
                 <CardBerita gambar={PengadaanTempatSampah} judul="Membantu Mengurangi Pencemaran Lingkungan, Kelompok 241 KKN-BBM 64 UNAIR Adakan Pengadaan Tempat Sampah Dari Ban Bekas"/>
                 <CardBerita gambar={PembuatanPot2} judul="Mengangkat Tema Urban Pollution, Kelompok KKN-BBM 64 UNAIR Kel.241 Mengubah Sampah Botol Plastik Bekas Menjadi Pot Bunga Yang Estetik"/>
                 <CardBerita gambar={PemberdayaanUMKM} judul="Bantu Berdayakan UMKM, Kelompok 241 KKN-BBM 64 UNAIR Buatkan Banner Untuk Mi Ayam Lariso"/>
-                <CardBeritaPolos/>
+                <CardBerita gambar={PenyuluhanBeasiswa} judul="Kerjasama Dengan SMAN 22 SBY Dan AUBMO, Kelompok 241 KKN-BBM 64 UNAIR Adakan Acara Webinar Beasiswa Dengan Tema Kuliah Gratis Dengan KIP-K"/>
             </div>
         </div>    
     </>

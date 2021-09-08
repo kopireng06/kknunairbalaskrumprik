@@ -4,16 +4,20 @@ import Jumbotron from "../../components/Jumbotron";
 import Hashtags from "../../components/Hashtags";
 import PengadaanTempatSampah from "../../public/pengadaan-tempat-sampah.jpeg";
 import PengadaanTempatSampah2 from "../../public/pengadaan-tempat-sampah-2.jpeg";
+import { motion } from 'framer-motion';
 
 const Artikel = () => {
     const pathname = useRouter().pathname.match("\/([A-Za-z0-9]*)\/")[0];
-    console.log(pathname);
+    const initial = {y:-30,opacity:0};
+    const transition = {delay:0.7};
+    const animate = {y:0,opacity:1};
+
     return (  
-        <>
+        <motion.div layoutId={judul}>
             <Jumbotron pathName={pathname} gambar={PengadaanTempatSampah} 
             judul="Membantu Mengurangi Pencemaran Lingkungan, Kelompok 241 KKN-BBM 64 UNAIR Adakan Pengadaan Tempat Sampah Dari Ban Bekas" 
             tanggal="Senin, 9 Agustus 2021"/>
-            <div className="w-11/12 md:9/12 lg:w-8/12 mx-auto py-5">
+            <motion.div initial={initial} transition={transition} animate={animate} className="w-11/12 md:9/12 lg:w-8/12 mx-auto py-5">
                 <p className="text-sm my-3">
                     Senin, 9 Agustus 2021 kelompok 241 KKN-BBM 64 Universitas Airlangga melaksanakan program kerja 
                     pengadaan tempat sampah di kelurahan balas klumprik, kecamatan wiyung, kota surabaya. Program 
@@ -29,8 +33,8 @@ const Artikel = () => {
                     urban pollution. Pengadaan tempat sampah tersebut dilakukan secara offline di kantor kelurahan balas klumprik dan Wisata Batas Kampung (WBK). 
                 </p>
                 <Hashtags/>
-            </div>
-        </>
+            </motion.div>
+        </motion.div>
     );
 }
  

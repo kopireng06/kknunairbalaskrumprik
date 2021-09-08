@@ -5,16 +5,20 @@ import Hashtags from "../../components/Hashtags";
 import PembuatanPot from "../../public/pembuatan-pot.jpg";
 import PembuatanPot2 from "../../public/pembuatan-pot-2.jpg";
 import PembuatanPot3 from "../../public/pembuatan-pot-3.jpg";
+import { motion } from 'framer-motion'
 
 const Artikel = () => {
     const pathname = useRouter().pathname.match("\/([A-Za-z0-9]*)\/")[0];
-    console.log(pathname);
+    const initial = {y:-30,opacity:0};
+    const transition = {delay:0.7};
+    const animate = {y:0,opacity:1};
+
     return (  
-        <>
+        <motion.div layoutId={judul}>
             <Jumbotron pathName={pathname} gambar={PembuatanPot2} 
             judul="Mengangkat Tema Urban Pollution, Kelompok KKN-BBM 64 UNAIR Kel.241 Mengubah Sampah Botol Plastik Bekas Menjadi Pot Bunga Yang Estetik" 
             tanggal="Senin, 9 Agustus 2021"/>
-            <div className="w-11/12 md:9/12 lg:w-8/12 mx-auto py-5">
+            <motion.div initial={initial} transition={transition} animate={animate} className="w-11/12 md:9/12 lg:w-8/12 mx-auto py-5">
                 <p className="text-sm my-3">
                     Guna mengurangi sampah botol plastik kelompok 241 KKN-BBM 64 Universitas Airlangga membuat 
                     program kerja memperindah taman kantor Kelurahan Balas Klumprik, Kecamatan Wiyung, Kota Surabaya 
@@ -46,8 +50,8 @@ const Artikel = () => {
                     Kecamatan Wiyung, Kota Surabaya dengan mengolah sampah menjadi barang yang bermanfaat dan bernilai estetik.
                 </p>
                 <Hashtags/>
-            </div>
-        </>
+            </motion.div>
+        </motion.div>
     );
 }
  

@@ -5,17 +5,21 @@ import Hashtags from "../../components/Hashtags";
 import NgasihMasker2 from "../../public/ngasih-masker-2.jpg"
 import NgasihMasker from "../../public/ngasih-masker.jpg"
 import NgasihMaskerPoster from "../../public/ngasih-masker-poster.jpg"
+import { motion } from 'framer-motion';
 
 const Artikel = () => {
     const pathname = useRouter().pathname.match("\/([A-Za-z0-9]*)\/")[0];
-    console.log(pathname);
+    const initial = {y:-30,opacity:0};
+    const transition = {delay:0.7};
+    const animate = {y:0,opacity:1};
+
     return (  
-        <>
+        <motion.div layoutId={judul}>
             <Jumbotron pathName={pathname} gambar={NgasihMasker2} 
             judul="Dilaksanakan di 3 RW, KKN-BBM 64 UNAIR Kel.241 Adakan 
             Pembagian Hand Sanitizer, Masker Serta Penyuluhan Vaksin" 
             tanggal="Sabtu, 7 Agustus 2021"/>
-            <div className="w-11/12 md:9/12 lg:w-8/12 mx-auto py-5">
+            <motion.div initial={initial} transition={transition} animate={animate} className="w-11/12 md:9/12 lg:w-8/12 mx-auto py-5">
                 <p className="text-sm my-3">
                     Pada hari sabtu tanggal 7 Agustus 2021, kelompok 241 KKN-BBM 64 Universitas Airlangga melaksanakan 
                     penyuluhan vaksin dan pembagian hand sanitizer di wilayah Kelurahan Balas Klumprik, Kecamatan Wiyung, Kota Surabaya.
@@ -41,8 +45,8 @@ const Artikel = () => {
                     <Image src={NgasihMaskerPoster} alt="h" layout="fill" objectFit="cover"/>
                 </div>
                 <Hashtags/>
-            </div>
-        </>
+            </motion.div>
+        </motion.div>
     );
 }
  

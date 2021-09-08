@@ -26,6 +26,9 @@
 .filter-red-600{
     filter: invert(22%) sepia(38%) saturate(4341%) hue-rotate(342deg) brightness(104%) contrast(104%);
 }
+/* .react-pdf__Page__canvas{
+    width: 100% !important;
+} */
 @media screen and (min-width: 1024px) {
     .p-60p{
         padding-top: 50%;

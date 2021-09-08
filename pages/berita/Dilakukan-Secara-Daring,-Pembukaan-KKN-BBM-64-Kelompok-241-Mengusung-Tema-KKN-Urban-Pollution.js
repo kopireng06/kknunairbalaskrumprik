@@ -4,15 +4,19 @@ import Jumbotron from "../../components/Jumbotron";
 import ScreenShotPembukaan from "../../public/screenshot-pembukaan.jpg";
 import ScreenShotPembukaan2 from "../../public/screenshot-pembukaan-2.jpg";
 import Hashtags from '../../components/Hashtags';
+import { motion } from 'framer-motion';
 
 const Berita1 = () => {
     const pathname = useRouter().pathname.match("\/([A-Za-z0-9]*)\/")[0];
-    console.log(pathname)
+    const initial = {y:-30,opacity:0};
+    const transition = {delay:0.7};
+    const animate = {y:0,opacity:1};
+
     return (  
-        <>
+        <motion.div layoutId={judul}>
             <Jumbotron pathName={pathname} gambar={ScreenShotPembukaan} judul="Dilakukan Secara Daring, Pembukaan KKN-BBM 64 
             Kelompok 241 Mengusung Tema KKN Urban Pollution" tanggal="Kamis, 29 Juli 2021"/>
-            <div className="w-11/12 md:9/12 lg:w-8/12 mx-auto py-5">
+            <motion.div initial={initial} transition={transition} animate={animate} className="w-11/12 md:9/12 lg:w-8/12 mx-auto py-5">
                 <p className="text-sm my-3">
                     Kamis, 29 Juli 2021 dilaksanakan Pembukaan KKN BBM 64 Kelompok 241 dengan mengusung 
                     tema KKN Urban Pollution yang nantinya di selenggarakan di kelurahan Balas Klumprik, 
@@ -47,8 +51,8 @@ const Berita1 = () => {
                     UMKM pada aspek kualitas produk yang dihasilkan dan juga proses produksi. 
                 </p>
                 <Hashtags/>
-            </div>
-        </>
+            </motion.div>
+        </motion.div>
     );
 }
  
